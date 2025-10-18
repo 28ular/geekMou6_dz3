@@ -189,3 +189,138 @@ h2 {
     border-radius: 30px;
     height: auto;
 }
+
+
+
+.nav {
+    color: green;
+    font-size: 50px;
+    text-decoration: none;
+}
+.nav_item {
+    text-decoration: none;
+}
+
+/*.footer {*/
+/*text-decoration: underline;*/
+/*    color: red;*/
+/*}*/
+
+.link {
+    text-decoration: none;
+    font-size: 28px;
+    color: grey;
+    transition:  all 1s ease-in-out;
+}
+.link:hover {
+    color: darkblue;
+}
+
+/* ==== 📱 Идеальная адаптивка под телефон ==== */
+@media (max-width: 768px) {
+    * {
+        font-size: 98%;
+    }
+
+    body {
+        padding: 16px 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .todo_input {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .todo_input input {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .todo_input button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .chepset {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .chip {
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .list {
+        gap: 8px;
+    }
+
+    .todo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px 12px;
+    }
+
+    .todo label {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .todo button {
+        align-self: flex-end;
+        font-size: 0.85rem;
+    }
+
+    .cont_stats {
+        width: 100%;
+        font-size: 18px;
+        gap: 12px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .nav {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .link {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .specialBtn {
+        width: 100%;
+        margin: 12px 0 0 0;
+        padding: 12px;
+    }
+}

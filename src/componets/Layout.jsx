@@ -1,5 +1,5 @@
 import {Header} from "./Header.jsx";
-import {Outlet} from "react-router-dom";
+import {Link, NavLink, Outlet} from "react-router-dom";
 
 export const Layout = () => {
     return (
@@ -8,7 +8,7 @@ export const Layout = () => {
             <main className="content">
                 <Outlet/>
             </main>
-            <footer className="footer">Rick & Morty Explorer</footer>
+            <footer className="footer"><Link to="https://t.me/uu_mrts" className="link">Made by Ular</Link></footer>
         </div>
     )
 }

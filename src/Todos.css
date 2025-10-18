@@ -1,0 +1,16 @@
+.nav {
+
+}
+
+.nav_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}

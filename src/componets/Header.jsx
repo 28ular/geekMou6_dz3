@@ -1,17 +1,20 @@
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
+import "../Todos.css"
 
 export const Header = () => {
+
+    const navigate = useNavigate();
+
+
     return (
         <header>
-            <div className="brand"> Zustand todo</div>
 
-            <nav className="nav">
-
-                <NavLink to={'/'} end className={({isActive}) => isActive ?  'link active' : 'link'  }>Задачи</NavLink>
-                <NavLink to={'/stats'} className={({isActive}) => isActive ?  'link active' : 'link'  }>Статистика</NavLink>
-
-
-            </nav>
+            <div className="nav">
+                <div className="nav_item" >
+                    <ul onClick={ () => navigate('/')}>todos</ul>
+                    <ul onClick={ () => navigate('/stats')}>statistics</ul>
+                </div>
+            </div>
 
         </header>
     )
