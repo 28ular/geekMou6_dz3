@@ -4,6 +4,10 @@ import App from './App.jsx';
 import { RouterProvider } from "react-router-dom";
 import { route } from "./route.jsx";
 
+import manifest from './manifest.json';
+import icon192 from './assets/icon-192.png';
+import icon512 from './assets/icon-512.png';
+
 createRoot(document.getElementById('root')).render(
     <RouterProvider router={route}>
         <App />
